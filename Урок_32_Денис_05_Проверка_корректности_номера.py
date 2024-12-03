@@ -3,14 +3,14 @@ import re
 
 
 def validate_phone_number(phone_number):
-    pattern = r'^\d{11}$'
+    pattern = r'^79\d{9}$'
     return bool(re.match(pattern, phone_number))
 
 
 user='user_name' # Своё имя будет
 password='svoypassword'
 sender='podpisotpravitelya'
-receiver='79022604437'
+receiver='790226044371'
 text='Hello world!'
 
 if not validate_phone_number(receiver):
